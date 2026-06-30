@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مكتب جواد بن عبدالله الخرس للاستشارات المالية — استشارات مالية احترافية للمؤسسات والشركات</title>
+  
+  <!-- Primary SEO Metadata -->
+  <meta name="description" content="يقدم مكتب جواد بن عبدالله الخرس استشارات مالية متخصصة لغير الأوراق المالية في المملكة العربية السعودية. خدمات مسك الدفاتر، الإدارة المالية الجزئية، دراسات الجدوى والامتثال الضريبي." />
+  <meta name="keywords" content="استشارات مالية، مسك الدفاتر، مدير مالي جزئي، دراسات جدوى، ضريبة القيمة المضافة، تحليل التكاليف، امتثال محاسبي، جواد الخرس" />
+  <meta name="author" content="مكتب جواد بن عبدالله الخرس للاستشارات المالية" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook / LinkedIn Sharing Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jawadadvisory.com/" />
+  <meta property="og:title" content="مكتب جواد بن عبدالله الخرس للاستشارات المالية" />
+  <meta property="og:description" content="شريككم المهني المعتمد للتخطيط المحاسبي والتحليل المالي لغير الأوراق المالية بالمملكة العربية السعودية." />
+  <meta property="og:image" content="logo.png" />
+  
+  <!-- Twitter Metadata -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="مكتب جواد بن عبدالله الخرس للاستشارات المالية" />
+  <meta property="twitter:description" content="حلول مالية مهنية متكاملة لرفع كفاءة أعمالكم وحوكمة أنظمتكم المحاسبية." />
+  <meta property="twitter:image" content="logo.png" />
+
+  <!-- Google Fonts Preconnect and Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- HTMX Library (For clean, semantic AJAX actions and UI states) -->
+  <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lRIkbPla3geNTAp5eyWPIcEPmEC155a+dbloqv5YdiG66UXd19vyWYY6O3L0" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD Schema (Local Business / Financial Service SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "مكتب جواد بن عبدالله الخرس للاستشارات المالية",
+    "description": "استشارات مالية لغير الأوراق المالية متخصصة في مسك الدفاتر ودراسات الجدوى والتحليل الضريبي بالمملكة العربية السعودية.",
+    "url": "https://www.jawadadvisory.com",
+    "telephone": "+966506662700",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "المنطقة الشرقية",
+      "addressCountry": "SA"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ─── HEADER & NAVIGATION ────────────────────────────── -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="الصفحة الرئيسية لمكتب جواد الخرس">
+        <img src="logo.png?v=2.0" alt="شعار مكتب جواد بن عبدالله الخرس" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          مكتب جواد بن عبدالله الخرس
+          <span>للاستشارات المالية لغير الأوراق المالية</span>
+        </div>
+      </a>
+      
+      <nav id="navMenu" class="nav-menu">
+        <li><a href="#about">عن المكتب</a></li>
+        <li><a href="#services">الخدمات الاستشارية</a></li>
+        <li><a href="#process">منهجية العمل</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+        <li class="mobile-only"><a href="#" class="btn btn-accent btn-nav" data-open-modal>طلب استشارة مالية</a></li>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary btn-nav" data-open-modal>طلب استشارة مالية</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة الرئيسية">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── HERO SECTION ───────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-badge">ترخيص مهني معتمد من الجهات المختصة</div>
+      <h1>هندسة الأنظمة المحاسبية والقرار المالي لنمو واستقرار أعمالكم</h1>
+      <h2>نقدم استشارات مالية متكاملة لغير الأوراق المالية، صُممت لمساعدة المؤسسات والشركات الواعدة على تحقيق الكفاءة التشغيلية والامتثال المحاسبي التام.</h2>
+      
+      <div class="hero-actions">
+        <a href="#" class="btn btn-accent" data-open-modal>طلب استشارة محاسبية</a>
+        <a href="#services" class="btn btn-secondary">استكشاف الخدمات الاستشارية</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-val">100%</span>
+          <span class="stat-lbl">سرية وأمان البيانات المالية</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">24 ساعة</span>
+          <span class="stat-lbl">متوسط زمن الاستجابة والتحليل</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">متكاملة</span>
+          <span class="stat-lbl">حلول الامتثال الضريبي والمحاسبي</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT SECTION ──────────────────────────────────── -->
+    <section class="about" id="about">
+      <div class="section-header">
+        <span class="section-label">ريادة مهنية ومصداقية</span>
+        <h2 class="section-title">شريككم المحاسبي والاستراتيجي الموثوق</h2>
+        <div class="divider"></div>
+        <p class="section-desc">نلتزم في مكتب جواد بن عبدالله الخرس بتقديم استشارات مالية ومنهجيات عمل ترفع من مستوى الحوكمة والتحكم المالي داخل مؤسستكم.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>لماذا مكتب جواد بن عبدالله الخرس؟</h3>
+          <p>
+            تتطلب البيئة الاستثمارية والمالية الحديثة حوكمة محاسبية دقيقة وضوابط مالية صارمة. يسعى فريقنا المهني لتسخير خبراته الأكاديمية والعملية في خدمة منشآتكم، من خلال فحص وتحليل العمليات الإدارية والمحاسبية لضمان امتثالها للأنظمة والمعايير المهنية المعترف بها في المملكة العربية السعودية.
+          </p>
+          <p>
+            نحن لا نقدم مجرد تقارير جامدة، بل نعمل كشريك استشاري يتابع تطور ونمو منشآتكم ويحلل نقاط التعادل والتكاليف لمواجهة التحديات المالية بكفاءة.
+          </p>
+          <div class="about-highlight">
+            <p>رسالتنا تتركز على تحويل تعقيدات الحسابات والتدفقات النقدية إلى أرقام واضحة تدعم اتخاذ القرار الصحيح في الوقت المناسب.</p>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <h4 class="about-card-title">الترخيص النظامي</h4>
+            <p class="about-card-desc">مسجل ومرخص رسمياً لتقديم الاستشارات المالية لغير الأوراق المالية.</p>
+          </div>
+          <div class="about-card">
+            <h4 class="about-card-title">الحوكمة والامتثال</h4>
+            <p class="about-card-desc">أنظمة محاسبية مصممة وفقاً للمعايير والأنظمة الضريبية والمالية المحلية.</p>
+          </div>
+          <div class="about-card">
+            <h4 class="about-card-title">تكامل الخبرات</h4>
+            <p class="about-card-desc">دمج المنهج الأكاديمي الرصين مع التطبيقات والتحليلات المالية العملية.</p>
+          </div>
+          <div class="about-card">
+            <h4 class="about-card-title">المرونة والأمان</h4>
+            <p class="about-card-desc">خطط تسعير وتكليفات تتناسب مع طبيعة ونمو المؤسسات الصغيرة والمتوسطة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES SECTION ────────────────────────────────── -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <span class="section-label">الخدمات الاستشارية</span>
+        <h2 class="section-title">حلول محاسبية متكاملة لدعم الحوكمة المالية</h2>
+        <div class="divider"></div>
+        <p class="section-desc">مجموعة متكاملة من الحلول والخدمات الاستشارية المصممة لتمكين أصحاب الأعمال والمؤسسات من التحكم وإدارة التدفقات المالية بكفاءة.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">إعادة هيكلة الأنظمة المحاسبية</h3>
+            <span class="service-subtitle">التهيئة والتنظيم المؤسسي</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              عشوائية التسجيل المالي وغياب شجرة الحسابات المنظمة مما يؤدي لفقدان تتبع التدفقات النقدية بدقة.
+            </div>
+            <ul class="service-items">
+              <li>تصميم شجرة حسابات (Chart of Accounts) مخصصة لطبيعة النشاط.</li>
+              <li>اختيار وتهيئة البرنامج المحاسبي السحابي المتوافق مع الفوترة الإلكترونية.</li>
+              <li>تنظيم دورة المستندات المالية والاعتمادات الإدارية الداخلية لمنع الهدر.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              الحصول على نظام محاسبي منظم وموثوق يسهل استخراج القوائم والتقارير المالية بنقرة زر واحدة.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="إعادة هيكلة الأنظمة المحاسبية">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">المدير المالي الجزئي (CFO on Demand)</h3>
+            <span class="service-subtitle">التوجيه المالي الاستراتيجي</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              عدم القدرة على توظيف مدير مالي بدوام كامل وتكلفة عالية مع الحاجة لقرارات مالية استراتيجية.
+            </div>
+            <ul class="service-items">
+              <li>تحليل الهياكل التمويلية وإدارة التدفقات النقدية الداخلة والخارجة.</li>
+              <li>مراجعة التقارير المالية الدورية وتقديم توصيات لخفض المصاريف غير الضرورية.</li>
+              <li>المشاركة في التخطيط المستقبلي والاجتماعات الاستراتيجية للإدارة العليا.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              توجيه مالي خبير يوجه الشركة نحو خفض التكاليف وتحقيق الربحية المستهدفة بأقل تكلفة ممكنة.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="المدير المالي الجزئي — CFO on Demand">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">مسك الدفاتر والحسابات الدورية</h3>
+            <span class="service-subtitle">الرقابة المالية المستمرة</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              تراكم الفواتير والعمليات المعلقة وتأخر إقفال الحسابات الشهرية مما يعوق معرفة الوضع المالي الفعلي.
+            </div>
+            <ul class="service-items">
+              <li>تسجيل وتصنيف كافة القيود اليومية والفواتير والمستندات المحاسبية بانتظام.</li>
+              <li>مطابقة كشوفات الحسابات البنكية والعهد والمدينين والدائنين بشكل دوري.</li>
+              <li>إعداد التسويات الشهرية والقوائم المالية الأساسية والمركز المالي الفعلي للشركة.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              أرقام دقيقة وحية تعكس الواقع المالي الحقيقي للشركة وتمكنكم من اتخاذ القرارات اليومية الواعية.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="مسك الدفاتر الشهري">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">دراسات الجدوى الاقتصادية</h3>
+            <span class="service-subtitle">تقييم المشروعات والاستثمار</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              المخاطرة برؤوس الأموال في مشاريع جديدة أو توسعات إضافية دون دراسة علمية كافية للسوق والتدفقات.
+            </div>
+            <ul class="service-items">
+              <li>تحليل السوق وحجم الطلب وتحديد التكاليف الرأسمالية والتشغيلية المتوقعة.</li>
+              <li>بناء النماذج المالية والتدفقات النقدية المستقبلية لتقدير معدلات العائد المتوقعة.</li>
+              <li>حساب فترات الاسترداد والقيمة الحالية الصافية وتحديد معايير حساسية المخاطر.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              أداة تقييم علمية واضحة وموثقة تضمن بناء قرار الاستثمار أو التوسع على ركائز اقتصادية سليمة.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="دراسة الجدوى الاقتصادية">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">تحليل التكاليف ونقطة التعادل</h3>
+            <span class="service-subtitle">تحسين الكفاءة وهامش الربح</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              صعوبة تسعير المنتجات أو الخدمات بشكل سليم وعدم وضوح حجم المبيعات المطلوب لتغطية التكاليف.
+            </div>
+            <ul class="service-items">
+              <li>تصنيف التكاليف إلى ثابتة ومتغيرة وتخصيصها بدقة على مراكز الإنتاج أو الخدمات.</li>
+              <li>حساب نقطة التعادل وهوامش المساهمة لتحديد المزيج التسويقي والبيعي الأكثر ربحية.</li>
+              <li>تقديم توصيات وحلول تسعير متزنة تدعم زيادة مجمل وصافي الربح للمنشأة.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              سياسة تسعيرية علمية مدروسة تضمن تحقيق هوامش ربح تغطي التكاليف وتدفع نحو النمو.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="تحليل التكاليف ونقطة التعادل">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">الاستشارات والامتثال الضريبي</h3>
+            <span class="service-subtitle">الامتثال والحوكمة التنظيمية</span>
+          </div>
+          <div class="service-body">
+            <div class="service-context">
+              <strong>التحدي المالي الشائع</strong>
+              مخاطر الغرامات والتسويات المالية بسبب الفهم الخاطئ أو عدم الالتزام بمتطلبات هيئة الزكاة والضريبة والجمارك.
+            </div>
+            <ul class="service-items">
+              <li>مراجعة ومطابقة الفواتير والإقرارات لضمان الامتثال لضريبة القيمة المضافة وعناصرها.</li>
+              <li>المساندة في إعداد المستندات والملفات المطلوبة للفحص والرد الاستشاري القانوني.</li>
+              <li>تقديم توصيات للتخطيط الزكوي والضريبي السليم وتفادي التجاوزات النظامية المقررة.</li>
+            </ul>
+            <div class="service-result">
+              <strong>الأثر الاستثماري المرجو</strong>
+              ضمان الامتثال المالي والضريبي الكامل وحماية المنشأة من الأخطاء المالية والغرامات المحتملة.
+            </div>
+          </div>
+          <div class="service-footer">
+            <a href="#" class="btn btn-secondary" data-open-modal data-service-name="الامتثال الضريبي — ضريبة القيمة المضافة">طلب الخدمة الاستشارية</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROCESS SECTION ────────────────────────────────── -->
+    <section class="process" id="process">
+      <div class="section-header">
+        <span class="section-label">منهجية العمل المحاسبي</span>
+        <h2 class="section-title">خطوات استشارية منظمة لضمان حوكمة حساباتكم</h2>
+        <div class="divider"></div>
+        <p class="section-desc">نتبع منهجاً أكاديمياً وعملياً متزناً يبدأ من فهم دقيق لواقع المنشأة وحتى تحقيق الاستقرار والرقابة المالية الذاتية.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4 class="step-title">الدراسة والتشخيص</h4>
+          <p class="step-desc">فحص وتقييم الوضع المحاسبي الراهن للمنشأة ورصد الثغرات ونقاط الضعف المالية الهيكلية.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4 class="step-title">التنظيم وبناء الهيكل</h4>
+          <p class="step-desc">تصميم شجرة الحسابات وتأسيس الدورة المستندية والبرمجية الملائمة لحجم وأهداف المنشأة.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4 class="step-title">المتابعة والتنفيذ الدوري</h4>
+          <p class="step-desc">تسجيل القيود وتدقيق المستندات بشكل دوري مستمر لضمان دقة وتطابق الحسابات بصورة منتظمة.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h4 class="step-title">الحوكمة والتحليل الاستراتيجي</h4>
+          <p class="step-desc">استخراج القوائم وتقديم القراءات المالية الاستشارية لدعم قرارات التنمية وتفادي المخاطر.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CLIENTS SECTION ────────────────────────────────── -->
+    <section class="clients" id="clients">
+      <div class="section-header">
+        <span class="section-label">شركاء النجاح</span>
+        <h2 class="section-title">منشآت وثقت باستشاراتنا المالية</h2>
+        <div class="divider"></div>
+        <p class="section-desc">نفخر بالتعاون مع العديد من الكيانات التجارية الرائدة ومشاركتهم في حوكمة وتطوير هيكلهم المالي.</p>
+      </div>
+
+      <div class="clients-grid">
+        <div class="client-logo-wrapper">
+          <svg class="client-logo-icon" viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--gold-primary)" stroke-width="2.5" aria-hidden="true">
+            <path d="M5,10 L25,10 L20,30 L0,30 Z" />
+            <text x="11" y="24" font-family="sans-serif" font-weight="bold" font-size="12" fill="var(--gold-primary)" stroke="none">G</text>
+          </svg>
+          <div class="client-logo-text">
+            <span class="client-name">شركة الغد للتجارة</span>
+            <span class="client-type">Al-Ghad Co.</span>
+          </div>
+        </div>
+        <div class="client-logo-wrapper">
+          <svg class="client-logo-icon" viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--gold-primary)" stroke-width="2.5" aria-hidden="true">
+            <circle cx="20" cy="20" r="14" />
+            <line x1="20" y1="6" x2="20" y2="34" />
+            <line x1="6" y1="20" x2="34" y2="20" />
+          </svg>
+          <div class="client-logo-text">
+            <span class="client-name">المدار العقارية</span>
+            <span class="client-type">Al-Madar Ltd.</span>
+          </div>
+        </div>
+        <div class="client-logo-wrapper">
+          <svg class="client-logo-icon" viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--gold-primary)" stroke-width="2.5" aria-hidden="true">
+            <polyline points="6,28 20,10 34,28" />
+            <polyline points="13,28 20,18 27,28" />
+          </svg>
+          <div class="client-logo-text">
+            <span class="client-name">روافد للمقاولات</span>
+            <span class="client-type">Rawafed Est.</span>
+          </div>
+        </div>
+        <div class="client-logo-wrapper">
+          <svg class="client-logo-icon" viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--gold-primary)" stroke-width="2.5" aria-hidden="true">
+            <rect x="6" y="8" width="28" height="24" rx="4" />
+            <text x="20" y="24" font-family="sans-serif" font-weight="bold" font-size="10" fill="var(--gold-primary)" stroke="none" text-anchor="middle">EG</text>
+          </svg>
+          <div class="client-logo-text">
+            <span class="client-name">البوابة الشرقية</span>
+            <span class="client-type">Eastern Gate</span>
+          </div>
+        </div>
+      </div>
+      <p class="clients-disclaimer">* تمثل الشعارات أعلاه نماذج ومحاكاة لعملاء تعاون معهم المكتب مهنياً.</p>
+    </section>
+
+    <!-- ─── CONTACT SECTION ────────────────────────────────── -->
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-label">تواصل مباشر</span>
+        <h2 class="section-title">ابدأ رحلة التنظيم المالي لمشروعكم اليوم</h2>
+        <div class="divider"></div>
+        <p class="section-desc">فريقنا الاستشاري متأهب لمناقشة تحدياتكم ووضع الحلول المناسبة لتنظيم حساباتكم وضبط تدفقاتكم النقدية.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-details">
+          <h4>بيانات ومعلومات الاتصال الرسمية</h4>
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <!-- Phone Icon SVG -->
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.7 1.01 1 1 0 01.88 1v3.5a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.5a1 1 0 011 .88 11.72 11.72 0 001.01 3.7 1 1 0 01-.27 1.11z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <strong>الاتصال الهاتفي والمراسلات</strong>
+                <a href="tel:+966506662700" dir="ltr">0506662700</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <!-- Envelope Icon SVG -->
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <strong>المراسلات البريدية الاستشارية</strong>
+                <a href="mailto:sales@jawadadvisory.com">sales@jawadadvisory.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <!-- Map Pin Icon SVG -->
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <strong>النطاق الجغرافي للخدمة</strong>
+                <span>المملكة العربية السعودية — المنطقة الشرقية وكافة مناطق المملكة رقمياً</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/966506662700?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9" 
+             class="contact-direct-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            تنسيق فوري عبر الواتساب
+          </a>
+
+          <div class="contact-licensing">
+            <p>مكتب مرخص رسمياً في المملكة العربية السعودية تحت تصنيف الاستشارات المهنية لغير الأوراق المالية، ويسري تقديم خدماتنا وفقاً للأنظمة واللوائح والقرارات المنظمة الصادرة عن وزارة التجارة وهيئة المقاولين والهيئات المهنية ذات العلاقة.</p>
+          </div>
+        </div>
+
+        <!-- Embedded Inline Contact Form utilizing HTMX -->
+        <div class="form-container-box">
+          <h3>طلب استشارة مباشرة</h3>
+          <p>يرجى إرسال بيانات الاتصال ونوع النشاط وسنتصل بكم في غضون 24 ساعة عمل.</p>
+          
+          <form id="directContactForm" 
+                hx-post="https://httpbin.org/post" 
+                hx-target="#form-message-placeholder" 
+                hx-swap="innerHTML"
+                aria-label="نموذج طلب الاستشارة المباشرة">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="directName">الاسم الثلاثي الكامل <span>*</span></label>
+                <input type="text" id="directName" name="name" class="form-control" placeholder="أدخل اسمك الكامل" required />
+              </div>
+              <div class="form-group">
+                <label for="directPhone">رقم جوال الاتصال <span>*</span></label>
+                <input type="tel" id="directPhone" name="phone" class="form-control" placeholder="05xxxxxxxx" required dir="ltr" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="directEmail">البريد الإلكتروني المهني</label>
+              <input type="email" id="directEmail" name="email" class="form-control" placeholder="name@company.com" dir="ltr" />
+            </div>
+
+            <div class="form-group">
+              <label for="directService">الخدمة الاستشارية المطلوبة <span>*</span></label>
+              <select id="directService" name="service" class="form-control" required>
+                <option value="" disabled selected>اختر نوع الخدمة لتوجيه الطلب</option>
+                <option value="مسك الدفاتر الشهري">مسك الدفاتر الشهري</option>
+                <option value="المدير المالي الجزئي">المدير المالي الجزئي — CFO on Demand</option>
+                <option value="إعادة هيكلة الأنظمة المحاسبية">إعادة هيكلة وتأسيس القسم المحاسبي</option>
+                <option value="دراسة الجدوى الاقتصادية">دراسة الجدوى الاقتصادية</option>
+                <option value="تحليل التكاليف ونقطة التعادل">تحليل التكاليف وهامش المساهمة</option>
+                <option value="الامتثال والتحليل الضريبي">الامتثال الضريبي وضريبة القيمة المضافة</option>
+                <option value="تحديد الخدمة المناسبة">أحتاج استشارة تشخيصية أولية لتحديد المتطلبات</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="directMessage">موجز عن النشاط ومتطلبات الاستشارة</label>
+              <textarea id="directMessage" name="message" class="form-control" placeholder="يرجى كتابة لمحة سريعة عن طبيعة منشأتكم والخدمة المستهدفة..."></textarea>
+            </div>
+
+            <!-- HTMX Response Swapping Element -->
+            <div id="form-message-placeholder" style="margin-bottom:15px; font-size:0.88rem;"></div>
+
+            <button type="submit" class="btn btn-accent btn-submit">إرسال طلب الاستشارة</button>
+            <p class="form-footer-note">نلتزم بحفظ وتأمين كامل سرية البيانات المرسلة.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <p class="footer-text">
+        حقوق النشر محفوظة &copy; 2026 مكتب جواد بن عبدالله الخرس للاستشارات المالية لغير الأوراق المالية
+      </p>
+      <div class="footer-links">
+        <a href="tel:+966506662700">اتصال مباشر: 0506662700</a>
+        <a href="mailto:sales@jawadadvisory.com">البريد المهني: sales@jawadadvisory.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── POPUP MODAL (Lead Capture Form) ────────────────── -->
+  <div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="إغلاق النافذة">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">طلب استشارة فنية متخصصة</h3>
+        <p class="modal-desc">املأ الحقول التالية لتوجيه طلبك إلى الخبير الاستشاري المختص.</p>
+      </div>
+
+      <form id="modalContactForm" 
+            hx-post="https://httpbin.org/post" 
+            hx-target="#modal-message-placeholder" 
+            hx-swap="innerHTML"
+            aria-label="نموذج طلب استشارة منبثق">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalName">الاسم الكامل <span>*</span></label>
+            <input type="text" id="modalName" name="name" class="form-control" placeholder="الاسم الثلاثي الكامل" required />
+          </div>
+          <div class="form-group">
+            <label for="modalPhone">رقم جوال الاتصال <span>*</span></label>
+            <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="05xxxxxxxx" required dir="ltr" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalEmail">البريد الإلكتروني المهني</label>
+          <input type="email" id="modalEmail" name="email" class="form-control" placeholder="name@company.com" dir="ltr" />
+        </div>
+
+        <div class="form-group">
+          <label for="modalService">الخدمة الاستشارية المطلوبة <span>*</span></label>
+          <select id="modalService" name="service" class="form-control" required>
+            <option value="" disabled selected>اختر الخدمة الاستشارية المستهدفة</option>
+            <option value="مسك الدفاتر الشهري">مسك الدفاتر الشهري</option>
+            <option value="المدير المالي الجزئي">المدير المالي الجزئي — CFO on Demand</option>
+            <option value="إعادة هيكلة الأنظمة المحاسبية">إعادة هيكلة وتأسيس القسم المحاسبي</option>
+            <option value="دراسة الجدوى الاقتصادية">دراسة الجدوى الاقتصادية</option>
+            <option value="تحليل التكاليف ونقطة التعادل">تحليل التكاليف وهامش المساهمة</option>
+            <option value="الامتثال والتحليل الضريبي">الامتثال الضريبي وضريبة القيمة المضافة</option>
+            <option value="تحديد الخدمة المناسبة">أحتاج استشارة تشخيصية أولية لتحديد المتطلبات</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modalMessage">تفاصيل الطلب أو وضع المنشأة الحالي</label>
+          <textarea id="modalMessage" name="message" class="form-control" placeholder="صف المشكلة المحاسبية أو الخدمة المستهدفة بإيجاز..."></textarea>
+        </div>
+
+        <!-- HTMX Response Swapping Element -->
+        <div id="modal-message-placeholder" style="margin-bottom:15px; font-size:0.88rem;"></div>
+
+        <button type="submit" class="btn btn-accent btn-submit">تأكيد إرسال الطلب</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ─── TOAST NOTIFICATION CONTAINER ───────────────────── -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ─── WHATSAPP FLOAT ─────────────────────────────────── -->
+  <div class="wa-float-container">
+    <div class="wa-tooltip">المراسلة الفورية المهنية</div>
+    <a href="https://wa.me/966506662700?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9" 
+       class="wa-float-btn" target="_blank" rel="noopener" aria-label="مراسلة عبر واتساب">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- Primary JS Logic -->
+  <script src="index.js"></script>
+</body>
+</html>
