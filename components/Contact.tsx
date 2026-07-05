@@ -53,7 +53,7 @@ export default function Contact({ onShowToast }: ContactProps) {
 
     // Dynamic WhatsApp Redirect (Emoji-free academic message template)
     const whatsappNumber = "966506662700";
-    const rawMessage = `طلب استشارة مالية رسمية
+    const rawMessage = `طلب استشارة مالية
 
 الاسم الكامل: ${formData.name.trim()}
 رقم الجوال: ${formData.phone.trim()}
@@ -66,9 +66,20 @@ export default function Contact({ onShowToast }: ContactProps) {
     // Success Action
     onShowToast("تم التحقق من البيانات بنجاح، جاري تحويلكم للمستشار المالي عبر واتساب.", "success");
     
-    setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-    }, 1500);
+    const newWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      newWindow.opener = null;
+    } else {
+      window.location.href = whatsappUrl;
+    }
+
+    // Reset form fields
+    setFormData({
+      name: "",
+      phone: "",
+      service: "دراسة جدوى اقتصادية",
+      details: "",
+    });
   };
 
   return (
@@ -124,7 +135,7 @@ export default function Contact({ onShowToast }: ContactProps) {
             {/* WhatsApp Direct CTA */}
             <div className="pt-2 text-center lg:text-right">
               <a
-                href="https://api.whatsapp.com/send?phone=966506662700&text=%D8%B7%D9%84%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%A7%D9%84%D9%8A%D9%86%D8%A9%20%D8%B1%D8%B3%D9%85%D9%8A%D8%A9"
+                href="https://api.whatsapp.com/send?phone=966506662700&text=%D8%B7%D9%84%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%A7%D9%84%D9%8A%D8%A9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-lg bg-wa-green px-6 py-3.5 text-sm font-bold text-text-light hover:bg-wa-green-hover hover:-translate-y-0.5 transition-all duration-200"

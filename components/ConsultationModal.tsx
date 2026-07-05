@@ -86,7 +86,7 @@ export default function ConsultationModal({
 
     // Redirect to WhatsApp
     const whatsappNumber = "966506662700";
-    const rawMessage = `طلب استشارة مالية رسمية
+    const rawMessage = `طلب استشارة مالية
 
 نوع الخدمة: ${serviceName}
 الاسم الكامل: ${formData.name.trim()}
@@ -98,10 +98,16 @@ export default function ConsultationModal({
 
     onShowToast("تم التحقق من البيانات بنجاح، جاري تحويلكم للمستشار المالي عبر واتساب.", "success");
     
+    const newWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      newWindow.opener = null;
+    } else {
+      window.location.href = whatsappUrl;
+    }
+
     setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
       onClose();
-    }, 1500);
+    }, 1000);
   };
 
   return (

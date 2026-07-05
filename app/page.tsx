@@ -99,7 +99,7 @@ export default function Home() {
       {/* Floating WhatsApp Action Button (Right Aligned) */}
       <div className="fixed bottom-8 right-8 z-40 flex items-center gap-3 group">
         <a
-          href="https://api.whatsapp.com/send?phone=966506662700&text=%D8%B7%D9%84%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%A7%D9%84%D9%8A%D9%86%D8%A9%20%D8%B1%D8%B3%D9%85%D9%8A%D8%A9"
+          href="https://api.whatsapp.com/send?phone=966506662700&text=%D8%B7%D9%84%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%A7%D9%84%D9%8A%D8%A9"
           target="_blank"
           rel="noopener noreferrer"
           className="flex h-14 w-14 items-center justify-center rounded-full bg-wa-green text-text-light shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:scale-108 hover:shadow-[0_6px_28px_rgba(37,211,102,0.55)] transition-all duration-300"
