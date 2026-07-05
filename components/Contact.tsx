@@ -66,20 +66,16 @@ export default function Contact({ onShowToast }: ContactProps) {
     // Success Action
     onShowToast("تم التحقق من البيانات بنجاح، جاري تحويلكم للمستشار المالي عبر واتساب.", "success");
     
-    const newWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    if (newWindow) {
-      newWindow.opener = null;
-    } else {
+    setTimeout(() => {
       window.location.href = whatsappUrl;
-    }
-
-    // Reset form fields
-    setFormData({
-      name: "",
-      phone: "",
-      service: "دراسة جدوى اقتصادية",
-      details: "",
-    });
+      // Reset form fields
+      setFormData({
+        name: "",
+        phone: "",
+        service: "دراسة جدوى اقتصادية",
+        details: "",
+      });
+    }, 1000);
   };
 
   return (

@@ -98,14 +98,8 @@ export default function ConsultationModal({
 
     onShowToast("تم التحقق من البيانات بنجاح، جاري تحويلكم للمستشار المالي عبر واتساب.", "success");
     
-    const newWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    if (newWindow) {
-      newWindow.opener = null;
-    } else {
-      window.location.href = whatsappUrl;
-    }
-
     setTimeout(() => {
+      window.location.href = whatsappUrl;
       onClose();
     }, 1000);
   };
