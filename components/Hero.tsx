@@ -20,16 +20,16 @@ export default function Hero({ onOpenModal }: HeroProps) {
           نصنع الاستقرار المالي ونرسم مسارات نمو منشآتكم
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-text-muted">
-          حلول محاسبية متكاملة ودراسات جدوى اقتصادية واستشارات ضريبية وزكوية مبنية على أسس أكاديمية رصينة لدعم اتخاذ القرار وتفادي المخاطر.
+          حلول مالية متكاملة ودراسات جدوى اقتصادية واستشارات ضريبية مبنية على أسس أكاديمية رصينة لدعم اتخاذ القرار وتفادي المخاطر.
         </p>
 
         {/* Buttons */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <button
-            onClick={() => onOpenModal("استشارة استراتيجية")}
+            onClick={() => onOpenModal("طلب استشارة")}
             className="rounded-lg bg-gold-primary px-8 py-3.5 text-sm font-bold text-bg-deep hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(190,156,70,0.3)] transition-all duration-200 cursor-pointer"
           >
-            طلب استشارة استراتيجية
+            طلب استشارة
           </button>
           <a
             href="#services"
