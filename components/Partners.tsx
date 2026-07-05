@@ -57,15 +57,15 @@ export default function Partners() {
           {doubleLogos.map((logo, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex items-center justify-center bg-bg-panel/20 border border-border-light/10 rounded-xl px-5 py-4 h-20 w-36 sm:w-44 hover:border-gold-primary/30 transition-all duration-300 backdrop-blur-xs shadow-[0_4px_20px_rgba(0,0,0,0.1)] group cursor-pointer"
+              className="flex-shrink-0 flex items-center justify-center bg-white border border-gold-primary/20 rounded-2xl p-3 h-28 w-44 sm:w-56 hover:border-gold-primary/60 hover:shadow-[0_10px_30px_rgba(190,156,70,0.15)] transition-all duration-300 group cursor-pointer"
             >
               <div className="relative w-full h-full flex items-center justify-center">
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   fill
-                  sizes="(max-width: 640px) 144px, 176px"
-                  className="object-contain filter brightness-90 contrast-125 opacity-70 group-hover:opacity-100 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300"
+                  sizes="(max-width: 640px) 176px, 224px"
+                  className="object-contain opacity-100 group-hover:scale-106 transition-transform duration-300"
                 />
               </div>
             </div>
