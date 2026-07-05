@@ -55,8 +55,8 @@ export default function Header({ onOpenModal }: HeaderProps) {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {[
-              { label: "عن المكتب", href: "#about" },
-              { label: "الخدمات الاستشارية", href: "#services" },
+              { label: "من نحن", href: "#about" },
+              { label: "خدماتنا", href: "#services" },
               { label: "منهجية العمل", href: "#process" },
               { label: "اتصل بنا", href: "#contact" },
             ].map((link) => (
@@ -102,8 +102,8 @@ export default function Header({ onOpenModal }: HeaderProps) {
             className="fixed inset-0 top-20 z-45 w-full h-[calc(100vh-80px)] bg-bg-modal/98 border-t border-border-light flex flex-col items-center justify-center gap-8 py-10 px-6 md:hidden"
           >
             {[
-              { label: "عن المكتب", href: "#about" },
-              { label: "الخدمات الاستشارية", href: "#services" },
+              { label: "من نحن", href: "#about" },
+              { label: "خدماتنا", href: "#services" },
               { label: "منهجية العمل", href: "#process" },
               { label: "اتصل بنا", href: "#contact" },
             ].map((link) => (

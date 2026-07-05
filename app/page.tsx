@@ -67,8 +67,8 @@ export default function Home() {
             الاستشارات المالية المقدمة تخضع للتراخيص والتنظيمات المحلية لوزارة التجارة والجهات الرقابية المختصة بموجب الترخيص رقم (506662700) للاستشارات المالية لغير الأوراق المالية.
           </p>
           <div className="mt-4 flex justify-center gap-6">
-            <a href="#about" className="hover:text-gold-light transition-colors duration-200">عن المكتب</a>
-            <a href="#services" className="hover:text-gold-light transition-colors duration-200">الخدمات الاستشارية</a>
+            <a href="#about" className="hover:text-gold-light transition-colors duration-200">من نحن</a>
+            <a href="#services" className="hover:text-gold-light transition-colors duration-200">خدماتنا</a>
             <a href="#process" className="hover:text-gold-light transition-colors duration-200">منهجية العمل</a>
             <a href="#contact" className="hover:text-gold-light transition-colors duration-200">اتصل بنا</a>
           </div>

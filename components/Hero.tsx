@@ -13,14 +13,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
       <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 h-[300px] w-[600px] rounded-full bg-gold-primary/10 blur-[150px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-gold-primary/20 bg-gold-primary/5 px-4 py-1.5 text-xs font-semibold text-gold-light mb-8">
-          مكتب مرخص للاستشارات المالية لغير الأوراق المالية
-        </div>
+
 
         {/* Headings */}
         <h2 className="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight text-text-light sm:text-5xl md:text-6xl/tight">
-          نصنع الاستقرار المالي ونرسم مسارات نمو منشآتكم الاستثمارية
+          نصنع الاستقرار المالي ونرسم مسارات نمو منشآتكم
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-text-muted">
           حلول محاسبية متكاملة ودراسات جدوى اقتصادية واستشارات ضريبية وزكوية مبنية على أسس أكاديمية رصينة لدعم اتخاذ القرار وتفادي المخاطر.

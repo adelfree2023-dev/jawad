@@ -8,7 +8,7 @@ export default function About() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <span className="text-xs font-bold tracking-wider text-gold-light uppercase block mb-3">
-          عن المكتب — التأسيس والرسالة
+          من نحن — التأسيس والرسالة
         </span>
         <h2 className="text-2xl font-extrabold text-text-light sm:text-4xl">
           من نحن وكيف نساهم في تمكين وحوكمة أعمالكم
