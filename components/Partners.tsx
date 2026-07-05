@@ -13,7 +13,7 @@ export default function Partners() {
         delayChildren: 0.2,
       },
     },
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -26,7 +26,7 @@ export default function Partners() {
         damping: 15,
       },
     },
-  };
+  } as const;
 
   const logos = [
     {
