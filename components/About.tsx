@@ -36,6 +36,9 @@ export default function About() {
             <p className="text-text-muted leading-relaxed text-right font-medium">
               نخدم أصحاب المنشآت الذين يريدون أرقاماً يثقون بها، وامتثالاً لا يقلقهم، وقرارات مالية مبنية على أساس — لا على تخمين.
             </p>
+            <p className="text-text-muted leading-relaxed text-right">
+              نهدف إلى تنظيم وتأمين وحوكمة حسابات المنشأة وتطبيق أرقى المعايير المهنية لتفادي الخسائر وتوفير قراءة دقيقة وسهلة للوضع المالي والتدفقات النقدية.
+            </p>
           </div>
 
           <div className="border-r-4 border-gold-primary bg-gold-primary/2 p-5 rounded-l-lg mt-8">
@@ -67,7 +70,7 @@ export default function About() {
               رسالتنا
             </h4>
             <p className="text-xs sm:text-sm text-text-muted leading-relaxed text-right">
-              تقديم استشارات مالية وزكوية وضريبية رصينة تحمي الكيانات الاقتصادية وتدفعها نحو النمو المستدام وتتفادى العقوبات والغرامات.
+              تقديم استشارات مالية وضريبية رصينة تحمي الكيانات الاقتصادية وتدفعها نحو النمو المستدام وتتفادى العقوبات والغرامات.
             </p>
           </div>
         </motion.div>
