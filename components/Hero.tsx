@@ -1,41 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView, animate } from "framer-motion";
-
-interface CountUpProps {
-  value: number;
-  duration?: number;
-  suffix?: string;
-  prefix?: string;
-}
-
-function CountUp({ value, duration = 1.5, suffix = "", prefix = "" }: CountUpProps) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
-  const [displayValue, setDisplayValue] = useState(0);
-
-  useEffect(() => {
-    if (inView) {
-      const controls = animate(0, value, {
-        duration: duration,
-        ease: "easeOut",
-        onUpdate: (latest) => {
-          setDisplayValue(Math.round(latest));
-        },
-      });
-      return () => controls.stop();
-    }
-  }, [inView, value, duration]);
-
-  return (
-    <span ref={ref} className="font-mono text-3xl font-extrabold tracking-tight text-text-light sm:text-4xl md:text-5xl">
-      {prefix}
-      {displayValue}
-      {suffix}
-    </span>
-  );
-}
+import React from "react";
 
 interface HeroProps {
   onOpenModal: (serviceName?: string) => void;
@@ -75,25 +40,6 @@ export default function Hero({ onOpenModal }: HeroProps) {
           >
             تصفح خدماتنا الاستشارية
           </a>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="mx-auto mt-20 max-w-4xl border-t border-border-light pt-12">
-          <div className="grid grid-cols-2 gap-y-12 gap-x-8 sm:grid-cols-4">
-            {[
-              { label: "نسبة رضا عملائنا", value: 100, suffix: "%" },
-              { label: "سنوات خبرة مهنية وأكاديمية", value: 10, prefix: "+" },
-              { label: "ساعة متوسط زمن الرد", value: 24 },
-              { label: "منشأة قمنا بتمكينها وتطويرها", value: 50, prefix: "+" },
-            ].map((stat, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <CountUp value={stat.value} suffix={stat.suffix} prefix={stat.prefix} />
-                <span className="mt-2 text-xs font-semibold text-text-muted sm:text-sm">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
