@@ -20,9 +20,9 @@ export default function Hero({ onOpenModal }: HeroProps) {
           {/* Text Content Column */}
           <div className="lg:col-span-7 text-center lg:text-right flex flex-col items-center lg:items-start order-2 lg:order-1">
             {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold-primary/20 bg-gold-primary/5 px-4 py-1.5 text-xs font-semibold text-gold-light mb-6">
-              <span className="flex h-2 w-2 rounded-full bg-gold-primary animate-pulse" />
-              خبرة أكثر من 18 سنة في السوق السعودي
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold-primary/30 bg-gold-primary/10 px-4 py-2 text-xs sm:text-sm font-bold text-gold-light mb-6 shadow-[0_0_15px_rgba(190,156,70,0.1)]">
+              <span className="flex h-2.5 w-2.5 rounded-full bg-gold-primary animate-pulse" />
+              خبرة أكثر من 18 عاماً في السوق السعودي
             </div>
 
             {/* Headings */}
