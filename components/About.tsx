@@ -37,13 +37,13 @@ export default function About() {
               نخدم أصحاب المنشآت الذين يريدون أرقاماً يثقون بها، وامتثالاً لا يقلقهم، وقرارات مالية مبنية على أساس — لا على تخمين.
             </p>
             <p className="text-text-muted leading-relaxed text-right">
-              تهدف إلى تنظيم وتأمين وحوكمة حسابات المنشأة وتطبيق أرقى المعايير المهنية لتفادي الخسائر وتوفير قراءة دقيقة وسهلة للوضع المالي والتدفقات النقدية.
+              نهدف إلى تنظيم وتأمين وحوكمة حسابات المنشأة وتطبيق أرقى المعايير المهنية لتفادي الخسائر وتوفير قراءة دقيقة وسهلة للوضع المالي والتدفقات النقدية.
             </p>
           </div>
 
           <div className="border-r-4 border-gold-primary bg-gold-primary/2 p-5 rounded-l-lg mt-8">
-            <p className="font-medium text-text-light text-sm leading-relaxed text-right italic">
-              "قرارك المالي لا يستحق أقل من رأي مبني على أرقام حقيقية."
+            <p className="font-medium text-text-light text-sm leading-relaxed text-right">
+              نلتزم بتقديم تقارير مالية شفافة وواضحة تمنح الملاك وأصحاب القرار رؤية متكاملة تدعم قرارات التنمية والاستقرار المالي والتوسع التجاري المدروس.
             </p>
           </div>
         </motion.div>
