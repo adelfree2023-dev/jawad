@@ -11,7 +11,7 @@ export default function Contact({ onShowToast }: ContactProps) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    service: "دراسة جدوى اقتصادية",
+    service: "",
     details: "",
   });
 
@@ -40,6 +40,11 @@ export default function Contact({ onShowToast }: ContactProps) {
       name: !nameValid,
       phone: !phoneValid,
     });
+
+    if (!formData.service) {
+      onShowToast("يرجى اختيار الخدمة المناسبة لكم من القائمة.", "error");
+      return;
+    }
 
     if (!nameValid) {
       onShowToast("يرجى إدخال الاسم الثلاثي بشكل صحيح (3 حروف على الأقل).", "error");
@@ -72,7 +77,7 @@ export default function Contact({ onShowToast }: ContactProps) {
       setFormData({
         name: "",
         phone: "",
-        service: "دراسة جدوى اقتصادية",
+        service: "",
         details: "",
       });
     }, 1000);
@@ -212,13 +217,16 @@ export default function Contact({ onShowToast }: ContactProps) {
                   value={formData.service}
                   onChange={handleChange}
                   className="w-full bg-bg-deep/50 border border-border-light rounded-lg px-4 py-3 text-xs sm:text-sm text-text-light focus:outline-none focus:ring-2 focus:ring-gold-primary/50 focus:border-transparent transition-all duration-200 appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg_xmlns=%22http://www.w3.org/2000/svg%22_viewBox=%220_0_24_24%22_fill=%22none%22_stroke=%22%23be9c46%22_stroke-width=%222%22_stroke-linecap=%22round%22_stroke-linejoin=%22round%22%3E%3Cpath_d=%22M6_9l6_6_6-6%22/%3E%3C/svg%3E')] bg-no-repeat bg-[left_16px_center] bg-[length:16px]"
+                  required
                 >
-                  <option value="دراسة جدوى اقتصادية">دراسة جدوى اقتصادية</option>
-                  <option value="إعادة بناء وتنظيم الحسابات المتعثرة">إعادة بناء وتنظيم الحسابات المتعثرة</option>
-                  <option value="تأسيس الإدارات والأنظمة المحاسبية">تأسيس الإدارات والأنظمة المحاسبية</option>
-                  <option value="المتابعة والمراجعة المحاسبية الدورية">المتابعة والمراجعة المحاسبية الدورية</option>
+                  <option value="" disabled>اختر الخدمة المناسبة لك</option>
+                  <option value="مسك الدفاتر الشهري">مسك الدفاتر الشهري</option>
+                  <option value="المدير المالي الجزئي — CFO on Demand">المدير المالي الجزئي — CFO on Demand</option>
+                  <option value="إعادة تأسيس القسم المحاسبي">إعادة تأسيس القسم المحاسبي</option>
+                  <option value="دراسة الجدوى الاقتصادية">دراسة الجدوى الاقتصادية</option>
                   <option value="تحليل التكاليف ونقطة التعادل">تحليل التكاليف ونقطة التعادل</option>
-                  <option value="الاستشارات والامتثال الضريبي والزكوي">الاستشارات والامتثال الضريبي والزكوي</option>
+                  <option value="الامتثال الضريبي — ضريبة القيمة المضافة">الامتثال الضريبي — ضريبة القيمة المضافة</option>
+                  <option value="أحتاج استشارة لتحديد الخدمة المناسبة">أحتاج استشارة لتحديد الخدمة المناسبة</option>
                 </select>
               </div>
 
