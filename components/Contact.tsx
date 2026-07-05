@@ -103,27 +103,25 @@ export default function Contact({ onShowToast }: ContactProps) {
 
           <div className="space-y-6">
             {/* Phone */}
-            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-4">
+            <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-right gap-4">
               <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
                 <Phone className="h-5 w-5" />
               </div>
-              <div>
-                <strong className="block text-sm text-text-light">الاتصال الهاتفي والمراسلات</strong>
-                <a href="tel:+966506662700" className="text-sm text-text-muted hover:text-text-light font-mono dir-ltr inline-block mt-1">
+              <div className="flex flex-col justify-center">
+                <a href="tel:+966506662700" className="text-base font-medium text-text-muted hover:text-text-light font-mono dir-ltr inline-block">
                   0506662700
                 </a>
               </div>
             </div>
 
             {/* Email */}
-            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-4">
+            <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-right gap-4">
               <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
                 <Mail className="h-5 w-5" />
               </div>
-              <div>
-                <strong className="block text-sm text-text-light">المراسلات البريدية الاستشارية</strong>
-                <a href="mailto:info@jawadadvisory.com" className="text-sm text-text-muted hover:text-text-light font-mono mt-1 block">
-                  info@jawadadvisory.com
+              <div className="flex flex-col justify-center">
+                <a href="mailto:sales@jawadadvisory.com" className="text-base font-medium text-text-muted hover:text-text-light font-mono block">
+                  sales@jawadadvisory.com
                 </a>
               </div>
             </div>
