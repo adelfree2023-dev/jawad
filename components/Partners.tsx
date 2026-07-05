@@ -47,11 +47,8 @@ export default function Partners() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="flex-shrink-0 flex flex-col items-center gap-2 w-full lg:w-auto"
+          className="flex-shrink-0 flex items-center justify-center w-full lg:w-auto"
         >
-          <span className="text-[10px] font-extrabold text-gold-light uppercase tracking-widest bg-gold-primary/10 px-3 py-1 rounded-full border border-gold-primary/20">
-            شريك معتمد
-          </span>
           <div className="flex items-center justify-center bg-white border-2 border-gold-primary rounded-2xl p-2.5 h-28 w-44 sm:w-56 shadow-[0_10px_30px_rgba(190,156,70,0.25)] relative">
             <div className="relative w-full h-full">
               <Image
