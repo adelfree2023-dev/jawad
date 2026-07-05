@@ -145,15 +145,7 @@ export default function Contact({ onShowToast }: ContactProps) {
             </div>
           </div>
 
-          {/* Licensing Info */}
-          <div className="border-t border-border-light pt-6 mt-8">
-            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-3">
-              <Award className="h-5 w-5 text-gold-light flex-shrink-0 mt-0.5" />
-              <p className="text-xs text-text-muted leading-relaxed text-right">
-                مكتب جواد بن عبدالله الخرس للاستشارات المالية، مرخص رسمياً في المملكة العربية السعودية لتقديم الخدمات الاستشارية لغير الأوراق المالية. نلتزم بكافة المعايير المهنية والقوانين المنظمة للقطاع التجاري الصادرة عن الجهات الحكومية والرقابية ذات الصلة.
-              </p>
-            </div>
-          </div>
+
         </div>
 
         {/* Lead Capture Form Column */}
