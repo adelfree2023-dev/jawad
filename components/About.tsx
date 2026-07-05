@@ -29,13 +29,18 @@ export default function About() {
           <h3 className="text-xl font-bold text-text-light text-center lg:text-right">
             حلول مالية متزنة تنطلق من الخبرة الأكاديمية والواقع التجاري للمملكة
           </h3>
-          <p className="text-text-muted leading-relaxed text-right">
-            تأسس مكتب جواد بن عبدالله الخرس للاستشارات المالية ليكون شريكاً استراتيجياً موثوقاً للمنشآت التجارية والشركات المتوسطة والصغيرة في المملكة العربية السعودية، بخبرة مهنية عريقة تمتد لأكثر من 18 عاماً في السوق السعودي. ننطلق من منهجية علمية وأكاديمية دقيقة تهدف إلى تنظيم وتأمين وحوكمة حسابات المنشأة وتطبيق أرقى المعايير المهنية لتفادي الخسائر وتوفير قراءة دقيقة وسهلة للوضع المالي والتدفقات النقدية.
-          </p>
+          <div className="space-y-4">
+            <p className="text-text-muted leading-relaxed text-right">
+              مكتب جواد بن عبدالله الخرس للاستشارات المالية لغير الأوراق المالية — مكتب متخصص في تقديم الخدمات المحاسبية والمالية والضريبية بخبرة عميقة في السوق والبيئة التنظيمية السعودية.
+            </p>
+            <p className="text-text-muted leading-relaxed text-right font-medium">
+              نخدم أصحاب المنشآت الذين يريدون أرقاماً يثقون بها، وامتثالاً لا يقلقهم، وقرارات مالية مبنية على أساس — لا على تخمين.
+            </p>
+          </div>
 
           <div className="border-r-4 border-gold-primary bg-gold-primary/2 p-5 rounded-l-lg mt-8">
-            <p className="font-medium text-text-light text-sm leading-relaxed text-right">
-              نلتزم بتقديم تقارير مالية شفافة وواضحة تمنح الملاك وأصحاب القرار رؤية متكاملة تدعم قرارات التنمية والاستقرار المالي والتوسع التجاري المدروس.
+            <p className="font-medium text-text-light text-sm leading-relaxed text-right italic">
+              "قرارك المالي لا يستحق أقل من رأي مبني على أرقام حقيقية."
             </p>
           </div>
         </motion.div>
