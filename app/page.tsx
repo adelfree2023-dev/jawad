@@ -60,8 +60,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border-light/10 bg-bg-deep py-8 text-center text-xs text-text-muted">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="leading-relaxed">
-            © {new Date().getFullYear()} مكتب جواد بن عبدالله الخرس للاستشارات المالية لغير الأوراق المالية مرخص من الهيئة السعودية للمراجعين و المحاسبين رقم الترخيص 969465 لمزاولة مهنة تقديم الاستشارات المالية ( لغير الاوراق المالية )
+          <p className="leading-relaxed text-[11px] sm:text-xs">
+            © 2026 مكتب جواد بن عبدالله الخرس للاستشارات المالية لغير الأوراق المالية مرخص من الهيئة السعودية للمراجعين و المحاسبين رقم الترخيص 969465 لمزاولة مهنة تقديم الاستشارات المالية ( لغير الاوراق المالية )
           </p>
         </div>
       </footer>
