@@ -131,6 +131,36 @@ export default function Contact({ onShowToast }: ContactProps) {
               </div>
             </div>
 
+            {/* Instagram */}
+            <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-right gap-4">
+              <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
+                <svg className="h-5 w-5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </div>
+              <div className="flex flex-col justify-center">
+                <a href="https://www.instagram.com/jawadadvisory.sa/" target="_blank" rel="noopener noreferrer" className="text-base font-medium text-text-muted hover:text-text-light font-mono block">
+                  jawadadvisory.sa
+                </a>
+              </div>
+            </div>
+
+            {/* TikTok */}
+            <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-right gap-4">
+              <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
+                <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.19 1.13 1.25 2.69 2.01 4.3 2.18v3.8c-1.78-.17-3.48-.96-4.73-2.25-.09-.09-.17-.19-.24-.28v7.37c0 4.1-3.04 7.6-7.1 7.97-4.74.43-8.88-3.15-8.88-7.85 0-3.69 2.58-6.91 6.19-7.58v3.91c-1.63.42-2.79 1.88-2.79 3.58 0 2.21 2.02 3.94 4.22 3.65 1.55-.2 2.7-1.57 2.7-3.12V0c.04.01.09.01.14.02z" />
+                </svg>
+              </div>
+              <div className="flex flex-col justify-center">
+                <a href="https://www.tiktok.com/@jawadadvisory" target="_blank" rel="noopener noreferrer" className="text-base font-medium text-text-muted hover:text-text-light font-mono block">
+                  jawadadvisory
+                </a>
+              </div>
+            </div>
+
             {/* WhatsApp Direct CTA */}
             <div className="pt-2 text-center lg:text-right">
               <a
