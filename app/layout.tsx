@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Tajawal, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const tajawal = Tajawal({
@@ -58,7 +59,23 @@ export default function RootLayout({
       dir="rtl"
       className={`${tajawal.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg-deep text-text-light">{children}</body>
+      <body className="min-h-full flex flex-col bg-bg-deep text-text-light">
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-6H6THP6R0J"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6H6THP6R0J');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
