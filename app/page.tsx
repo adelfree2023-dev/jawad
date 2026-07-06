@@ -61,17 +61,8 @@ export default function Home() {
       <footer className="border-t border-border-light/10 bg-bg-deep py-8 text-center text-xs text-text-muted">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="leading-relaxed">
-            حقوق الطبع والنشر © {new Date().getFullYear()} مكتب جواد بن عبدالله الخرس للاستشارات المالية. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} مكتب جواد بن عبدالله الخرس للاستشارات المالية لغير الأوراق المالية مرخص من الهيئة السعودية للمراجعين و المحاسبين
           </p>
-          <p className="mt-2 text-[10px] opacity-75">
-            الاستشارات المالية المقدمة تخضع للتراخيص والتنظيمات المحلية لوزارة التجارة والجهات الرقابية المختصة بموجب الترخيص رقم (506662700) للاستشارات المالية لغير الأوراق المالية.
-          </p>
-          <div className="mt-4 flex justify-center gap-6">
-            <a href="#about" className="hover:text-gold-light transition-colors duration-200">من نحن</a>
-            <a href="#services" className="hover:text-gold-light transition-colors duration-200">خدماتنا</a>
-            <a href="#process" className="hover:text-gold-light transition-colors duration-200">منهجية العمل</a>
-            <a href="#contact" className="hover:text-gold-light transition-colors duration-200">اتصل بنا</a>
-          </div>
         </div>
       </footer>
 
